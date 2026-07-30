@@ -4,11 +4,50 @@ Practical skills for AI agents, focused on clear writing and useful workflows.
 
 ## Install
 
+Recommended interactive install:
+
 ```bash
 npx skills@latest add Ozmanovic/ozmanovic-skills
 ```
 
 Choose the skills and agent environments you want when prompted.
+
+### Install options
+
+List the available skills without installing them:
+
+```bash
+npx skills@latest add Ozmanovic/ozmanovic-skills --list
+```
+
+Install only Jargonless globally for Codex:
+
+```bash
+npx skills@latest add Ozmanovic/ozmanovic-skills \
+  --skill jargonless-reporting \
+  --agent codex \
+  --global
+```
+
+Install all skills globally for Codex:
+
+```bash
+npx skills@latest add Ozmanovic/ozmanovic-skills \
+  --skill '*' \
+  --agent codex \
+  --global \
+  --yes
+```
+
+Install all skills globally for every detected agent:
+
+```bash
+npx skills@latest add Ozmanovic/ozmanovic-skills \
+  --all \
+  --global
+```
+
+Without `--global`, skills are installed for the current project. Use `--global` to make them available across projects.
 
 ## Skills
 
