@@ -1,0 +1,7 @@
+interface:
+  display_name: "Jargonless"
+  short_description: "Clear reports people can act on"
+  default_prompt: "Use $jargonless-reporting to write this deliverable in the clearest action-first, decision-first, or hybrid format."
+
+policy:
+  allow_implicit_invocation: true
